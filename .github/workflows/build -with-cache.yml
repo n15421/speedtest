@@ -9,6 +9,8 @@ jobs:
         uses: actions/checkout@v2
 
       - uses: xmake-io/github-action-setup-xmake@v1
+
+      - uses: n15421/BuildCache@develop
       
       - run: |
           xmake repo -u
